@@ -313,19 +313,27 @@ section {
 }
 
 .about .row .progress .bar-1-3 span {
+    width: 65%;
+}
+
+.about .row .progress .bar-1-4 span {
     width: 90%;
 }
 
 .about .row .progress .bar-2-1 span {
-    width: 90%;
+    width: 95%;
 }
 
 .about .row .progress .bar-2-2 span {
-    width: 75%;
+    width: 85%;
 }
 
 .about .row .progress .bar-2-3 span {
-    width: 80%;
+    width: 90%;
+}
+
+.about .row .progress .bar-2-4 span {
+    width: 85%;
 }
 
 .services .box-container {
