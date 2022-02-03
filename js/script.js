@@ -21,3 +21,18 @@ themeToggler.onclick = () => {
     document.body.classList.remove("active");
   }
 };
+
+new TypeIt("#username", {
+  waitUntilVisible: true,
+  speed: 190,
+  loop: true,
+})
+  .type("Simranpreet Singh")
+  .exec(async () => {
+    await new Promise((resolve, reject) => {
+      setTimeout(() => {
+        return resolve();
+      }, 2500);
+    });
+  })
+  .go();
