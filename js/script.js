@@ -26,6 +26,7 @@ new TypeIt("#username", {
   waitUntilVisible: true,
   speed: 190,
   loop: true,
+  cursor: false,
 })
   .type("Simranpreet Singh")
   .exec(async () => {
