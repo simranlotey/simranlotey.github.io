@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
 :root {
   --green: #27ae60;
   --black: #333;
@@ -94,7 +95,7 @@ section {
   margin: 1rem 0;
   border: 1rem solid transparent;
   border-radius: 50%;
-  height: 18rem;
+  height: 17.5rem;
   width: 17.4rem;
   box-shadow: var(--box-shadow);
 }
@@ -306,7 +307,7 @@ section {
 }
 
 .about .row .progress .bar-1-1 span {
-  width: 70%;
+  width: 85%;
 }
 
 .about .row .progress .bar-1-2 span {
@@ -314,10 +315,14 @@ section {
 }
 
 .about .row .progress .bar-1-3 span {
-  width: 65%;
+  width: 70%;
 }
 
 .about .row .progress .bar-1-4 span {
+  width: 70%;
+}
+
+.about .row .progress .bar-1-5 span {
   width: 90%;
 }
 
@@ -326,7 +331,7 @@ section {
 }
 
 .about .row .progress .bar-2-2 span {
-  width: 85%;
+  width: 90%;
 }
 
 .about .row .progress .bar-2-3 span {
@@ -334,6 +339,10 @@ section {
 }
 
 .about .row .progress .bar-2-4 span {
+  width: 95%;
+}
+
+.about .row .progress .bar-2-5 span {
   width: 85%;
 }
 
@@ -387,7 +396,7 @@ section {
   clip-path: circle(100%);
 }
 
-.services .box-container .box:hover > * {
+.services .box-container .box:hover>* {
   color: #fff;
 }
 
@@ -490,16 +499,20 @@ section {
   html {
     font-size: 55%;
   }
+
   body {
     padding-left: 0;
   }
+
   .header {
     left: -110%;
   }
+
   .header.active {
     left: 0%;
     transition: 0.4s linear;
   }
+
   #menu-btn {
     display: initial;
   }
@@ -509,6 +522,7 @@ section {
   html {
     font-size: 50%;
   }
+
   .header {
     width: 100%;
     border-right: 0;
