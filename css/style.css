@@ -49,7 +49,7 @@ section {
 }
 
 .btn {
-  margin-top: 1rem;
+  margin: 1rem;
   display: inline-block;
   padding: 1rem 3.5rem;
   border-radius: 0.5rem;
@@ -307,22 +307,34 @@ section {
 }
 
 .about .row .progress .bar-1-1 span {
-  width: 85%;
+  width: 90%;
 }
 
 .about .row .progress .bar-1-2 span {
-  width: 80%;
+  width: 85%;
 }
 
 .about .row .progress .bar-1-3 span {
-  width: 70%;
+  width: 85%;
 }
 
 .about .row .progress .bar-1-4 span {
-  width: 70%;
+  width: 85%;
 }
 
 .about .row .progress .bar-1-5 span {
+  width: 70%;
+}
+
+.about .row .progress .bar-1-6 span {
+  width: 90%;
+}
+
+.about .row .progress .bar-1-7 span {
+  width: 90%;
+}
+
+.about .row .progress .bar-1-8 span {
   width: 90%;
 }
 
@@ -335,7 +347,7 @@ section {
 }
 
 .about .row .progress .bar-2-3 span {
-  width: 90%;
+  width: 85%;
 }
 
 .about .row .progress .bar-2-4 span {
@@ -343,6 +355,18 @@ section {
 }
 
 .about .row .progress .bar-2-5 span {
+  width: 85%;
+}
+
+.about .row .progress .bar-2-6 span {
+  width: 90%;
+}
+
+.about .row .progress .bar-2-7 span {
+  width: 85%;
+}
+
+.about .row .progress .bar-2-8 span {
   width: 85%;
 }
 
@@ -375,9 +399,8 @@ section {
   height: 100%;
   width: 100%;
   background: var(--bg-color);
-  display: grid;
-  place-items: center;
   transform: scale(0);
+  text-align: center;
 }
 
 .portfolio .box-container .box:hover .content {
@@ -385,6 +408,8 @@ section {
 }
 
 .portfolio .box-container .box .content h3 {
+  height: 25%;
+  margin-top: 20px;
   font-size: 2.5rem;
   color: var(--black);
   text-transform: uppercase;
@@ -393,7 +418,23 @@ section {
   transition-delay: 0.3s;
 }
 
+.portfolio .box-container .box .content a {
+  text-align: center;
+  font-size: 1.9rem;
+  color: var(--green);
+  text-transform: uppercase;
+  display: inline-block;
+  transform: translateY(-5rem);
+  opacity: 0;
+  transition-delay: 0.3s;
+}
+
 .portfolio .box-container .box:hover .content h3 {
+  transform: translateY(0rem);
+  opacity: 1;
+}
+
+.portfolio .box-container .box:hover .content a {
   transform: translateY(0rem);
   opacity: 1;
 }
