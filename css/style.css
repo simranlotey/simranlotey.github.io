@@ -22,6 +22,15 @@
   transition: 0.2s linear;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b8b8b8;
+  border-radius: 20px;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -370,13 +379,13 @@ section {
   width: 85%;
 }
 
-.portfolio .box-container {
+.projects .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
   gap: 2rem;
 }
 
-.portfolio .box-container .box {
+.projects .box-container .box {
   height: 25rem;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -385,14 +394,13 @@ section {
   border: 1rem solid transparent;
 }
 
-.portfolio .box-container .box img {
+.projects .box-container .box img {
   height: 100%;
   width: 100%;
-  background-color: white;
   object-fit: cover;
 }
 
-.portfolio .box-container .box .content {
+.projects .box-container .box .content {
   position: absolute;
   top: 0;
   left: 0;
@@ -403,11 +411,11 @@ section {
   text-align: center;
 }
 
-.portfolio .box-container .box:hover .content {
+.projects .box-container .box:hover .content {
   transform: scale(1);
 }
 
-.portfolio .box-container .box .content h3 {
+.projects .box-container .box .content h3 {
   height: 25%;
   margin-top: 20px;
   font-size: 2.5rem;
@@ -418,7 +426,7 @@ section {
   transition-delay: 0.3s;
 }
 
-.portfolio .box-container .box .content a {
+.projects .box-container .box .content a {
   text-align: center;
   font-size: 1.9rem;
   color: var(--green);
@@ -429,14 +437,18 @@ section {
   transition-delay: 0.3s;
 }
 
-.portfolio .box-container .box:hover .content h3 {
+.projects .box-container .box:hover .content h3 {
   transform: translateY(0rem);
   opacity: 1;
 }
 
-.portfolio .box-container .box:hover .content a {
+.projects .box-container .box:hover .content a {
   transform: translateY(0rem);
   opacity: 1;
+}
+
+.projects .box-container .box .content a:hover {
+  color: #00642a;
 }
 
 .credits {
