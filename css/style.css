@@ -378,7 +378,12 @@ section {
 .about .row .progress .bar-2-8 span {
   width: 85%;
 }
-
+.projects {
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+}
 .projects .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
