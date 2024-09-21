@@ -134,6 +134,9 @@ ul.socials {
 .socials ul a:active {
   background-color: #f0f0f0;
 }
+p img {
+  border-radius: 12px;
+}
 strong {
   color: #222;
   font-weight: 700;
